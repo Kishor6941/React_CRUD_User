@@ -44,6 +44,7 @@ const AddEditUser = () => {
     })
       .then((res) => {
         navigate("/");
+        params?.id ? alert("User Updated Successfully !") : alert("User Added Successfully!")
       })
       .catch((err) => {
         console.error(err?.message);
@@ -54,8 +55,8 @@ const AddEditUser = () => {
     if (
       user?.name === "" ||
       user?.phoneNo === "" ||
-      user?.email === "" || 
-      user?.country === "" || 
+      user?.email === "" ||
+      user?.country === "" ||
       user?.gender === ""
     ) {
       alert("Please enter all user details");
