@@ -17,7 +17,7 @@ const [data] = useFetch(`${API_URI.users}/${params?.id}`)
       <p className="card-text"><strong>Phone No : </strong>{data?.phoneNo}</p>
       <p className="card-text"><strong>Country : </strong>{data?.country}</p>
       <p className="card-text"><strong>Email : </strong>{data?.email}</p>
-      <p className="card-text"><strong>Phone No : </strong>{data?.gender}</p>
+      <p className="card-text"><strong>Gender : </strong>{data?.gender}</p>
     </div>
   </div>
     </div>
