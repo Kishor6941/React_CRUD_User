@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "Kishor Phawade",
+      "phoneNo": "9049416941",
+      "country": "India",
+      "email": "k@gmail.com",
+      "gender": "male",
+      "id": "3549"
+    },
+    {
+      "id": "4a84",
+      "name": "kishor",
+      "phoneNo": "904340",
+      "country": "Rasia",
+      "email": "k@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": "747d",
+      "name": "Vaibhavi",
+      "phoneNo": "394954",
+      "country": "Dubai",
+      "email": "v@gmail.com",
+      "gender": "female"
+    }
+  ],
+  "countryList": [
+    {
+      "id": "1",
+      "cName": "India"
+    },
+    {
+      "id": "2",
+      "cName": "US"
+    },
+    {
+      "id": "3",
+      "cName": "Rasia"
+    },
+    {
+      "id": "4",
+      "cName": "Dubai"
+    },
+    {
+      "id": "5",
+      "cName": "Japan"
+    },
+    {
+      "id": "6",
+      "cName": "Nepal"
+    }
+  ]
+}
