@@ -9,21 +9,21 @@ const AddEditUser = () => {
   const [data] = useFetch(API_URI.getcountries);
 
   useEffect(() => {
-    if(params?.id) {
+    if (params?.id) {
       axios
-      .get(`${API_URI.users}/${params?.id}`)
-      .then((res) => {
-        setUsers({
-          name: res?.data.name,
-          phoneNo: res?.data?.phoneNo,
-          country: res?.data?.country,
-          email: res?.data?.email,
-          gender: res?.data?.gender,
+        .get(`${API_URI.users}/${params?.id}`)
+        .then((res) => {
+          setUsers({
+            name: res?.data.name,
+            phoneNo: res?.data?.phoneNo,
+            country: res?.data?.country,
+            email: res?.data?.email,
+            gender: res?.data?.gender,
+          });
+        })
+        .catch((err) => {
+          console.error(err);
         });
-      })
-      .catch((err) => {
-        console.error(err);
-      });
     }
   }, [params?.id]);
 
@@ -38,8 +38,8 @@ const AddEditUser = () => {
 
   function addEditUser() {
     axios({
-      method: `${params?.id ? 'PUT' : 'POST' }`,
-      url: params?.id ? `${API_URI.users}/${params?.id}`: API_URI.users ,
+      method: `${params?.id ? "PUT" : "POST"}`,
+      url: params?.id ? `${API_URI.users}/${params?.id}` : API_URI.users,
       data: user,
     })
       .then((res) => {
@@ -51,7 +51,17 @@ const AddEditUser = () => {
   }
 
   const addEditUserForm = () => {
-    addEditUser();
+    if (
+      user?.name === "" ||
+      user?.phoneNo === "" ||
+      user?.email === "" || 
+      user?.country === "" || 
+      user?.gender === ""
+    ) {
+      alert("Please enter all user details");
+    } else {
+      addEditUser();
+    }
   };
   return (
     <div className="col-md-6 m-auto shadow-sm p-3 mb-5 bg-white rounded mt-3">
