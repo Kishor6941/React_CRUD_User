@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "vaibhavi",
+      "phoneNo": "123",
+      "country": "India",
+      "email": "v@gmail.com",
+      "gender": "female",
+      "id": 1
+    }
+  ],
   "countryList": [
     {
       "id": "1",
