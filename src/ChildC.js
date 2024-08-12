@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-const ChildC = () => {
+const ChildC = ({name,changeName}) => {
+    console.log("child called", name);
+    //100
   return (
-    <div>ChildC</div>
+    <div>
+        <h1>Child component { name}</h1>
+        <button className="btn btn-info" onClick={changeName}>
+          changeName
+        </button>
+    </div>
   )
 }
 
-export default ChildC
+export default memo(ChildC)

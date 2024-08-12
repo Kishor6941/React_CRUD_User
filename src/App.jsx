@@ -1,15 +1,11 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./components/Home";
-import AddEditUser from "./components/AddEditUser";
-import ViewUserDetails from "./components/ViewUserDetails";
+
 import styles from "./App.module.css"
 import Test from "./components/Test";
 import ParentC from "./ParentC";
 import React, { Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
+import ParentReactMemo from "./ParentReactMemo";
 // import Home from './components/Home';
 // import AddEditUser from './components/AddEditUser';
 // import ViewUserDetails from './components/ViewUserDetails';
@@ -44,7 +40,8 @@ const App = () => {
         </Routes>
         </Suspense>
       </BrowserRouter> */}
-      <ParentC />
+      {/* <ParentC /> */}
+      <ParentReactMemo />
     </div>
   );
 };
