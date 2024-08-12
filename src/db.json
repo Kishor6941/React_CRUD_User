@@ -1,5 +1,22 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Kishor Shripati Phawade",
+      "phoneNo": "90495949",
+      "country": "Dubai",
+      "email": "kishor@gmail.com",
+      "gender": "male",
+      "id": "fa6e"
+    },
+    {
+      "name": "vaibhavi Bharat Bodke",
+      "phoneNo": "932938349",
+      "country": "India",
+      "email": "VaibhaviBharatBodke@gmail.com",
+      "gender": "female",
+      "id": "b154"
+    }
+  ],
   "countryList": [
     {
       "id": "1",

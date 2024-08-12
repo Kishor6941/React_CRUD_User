@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import { API_URI } from './constant/API_Url_Constant';
 import useFetch from './CustomHook/useFetch';
