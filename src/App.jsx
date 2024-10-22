@@ -6,6 +6,7 @@ import React, { Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import ParentReactMemo from "./ParentReactMemo";
+import PureComp from "./pureCompExample/PureComp";
 // import Home from './components/Home';
 // import AddEditUser from './components/AddEditUser';
 // import ViewUserDetails from './components/ViewUserDetails';
@@ -41,7 +42,8 @@ const App = () => {
         </Suspense>
       </BrowserRouter> */}
       {/* <ParentC /> */}
-      <ParentReactMemo />
+      {/* <ParentReactMemo /> */}
+      <PureComp />
     </div>
   );
 };
